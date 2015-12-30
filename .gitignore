@@ -1,0 +1,21 @@
+*.swp
+*.swo
+*.un~
+*~
+*.DS_Store
+*.iml
+
+# For intelliJ setting files
+.idea/*.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/scopes/scope_settings.xml
+.idea/dataSources.ids
+!.idea/codeStyleSettings.xml
+!.idea/fileColors.xml
+!.idea/encodings.xml
+!.idea/gradle.xml
+!.idea/runConfigurations/*.xml
+!.idea/inspectionProfiles/*.xml
+!.idea/scopes/*.xml
+!.idea/templateLanguages.xml
+!.idea/vcs.xml
