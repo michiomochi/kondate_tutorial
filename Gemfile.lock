@@ -2,7 +2,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     ansi (1.5.0)
+    coderay (1.1.0)
     diff-lcs (1.2.5)
+    dotenv (2.0.2)
     hashie (3.4.3)
     highline (1.7.8)
     itamae (1.9.1)
@@ -11,16 +13,25 @@ GEM
       schash (~> 0.1.0)
       specinfra (>= 2.37.0, < 3.0.0)
       thor
+    itamae-plugin-recipe-rbenv (0.4.1)
+      itamae (~> 1.2)
+    itamae-secrets (0.1.0)
+      thor
     kondate (0.1.9)
       highline
       itamae
       serverspec
       thor
+    method_source (0.8.2)
     multi_json (1.11.2)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.0.2)
     net-telnet (0.1.1)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     rake (10.4.2)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
@@ -45,6 +56,7 @@ GEM
       rspec-its
       specinfra (~> 2.46)
     sfl (2.2)
+    slop (3.6.0)
     specinfra (2.47.1)
       net-scp
       net-ssh (>= 2.7, < 3.1)
@@ -56,7 +68,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv (~> 2.0.0)!
+  itamae-plugin-recipe-rbenv (~> 0.4.0)!
+  itamae-secrets (~> 0.1.0)!
   kondate (~> 0.1.0)!
+  pry (~> 0.10.0)!
   rake (~> 10.4.0)!
 
 BUNDLED WITH
