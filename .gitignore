@@ -4,6 +4,8 @@
 *~
 *.DS_Store
 *.iml
+.env.local
+.vagrant
 
 # For intelliJ setting files
 .idea/*.xml
