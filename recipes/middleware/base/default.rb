@@ -1,3 +1,9 @@
-execute "echo #{attrs['base']['message']}" do
-  command "echo #{attrs['base']['message']}"
-end
+include_recipe '../dstat/default'
+include_recipe '../git/default'
+include_recipe '../nodejs/default'
+include_recipe '../ntp/default'
+include_recipe '../ruby/default'
+include_recipe '../td-agent/default'
+include_recipe '../tmux/default'
+include_recipe '../vim/default'
+include_recipe '../zsh/default'
