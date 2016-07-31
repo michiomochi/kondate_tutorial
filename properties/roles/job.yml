@@ -1,0 +1,24 @@
+attributes:
+  base: true
+  td-agent:
+    plugins:
+      fluent-plugin-elasticsearch:
+        version: 1.2.1
+      fluent-plugin-s3:
+        version: 0.6.4
+      fluent-plugin-slack:
+        version: 0.6.2
+
+users:
+  - michi
+
+# For itamae-plugin-recipe-rbenv gem
+rbenv:
+  global: 2.3.0
+  versions:
+    - 2.3.0
+rbenv-default-gems:
+  default-gems:
+    - bundler ~> 1.11.0
+rbenv-gem-rehash:
+  install: true
